@@ -1,6 +1,6 @@
 defmodule Mynumber do
 
-  def corporate_number(num) do
+  def corporate_number?(num) do
     if String.length(num) !== 13 do
       false
     else
@@ -11,12 +11,37 @@ defmodule Mynumber do
       list = List.delete_at(list, -1)
       list = Enum.with_index(list)
       remainder = Enum.reduce(list, 0, fn(x, acc) ->
-         q = if rem(elem(x, 1), 2) == 0 do 1 else 2 end
-         acc = rem(acc + (elem(x, 0) * q), 9)
-       end)
+        q = if rem(elem(x, 1), 2) == 0 do 1 else 2 end
+        acc = rem(acc + (elem(x, 0) * q), 9) end)
 
       checkdegit == (9 - remainder)
     end
+  end
 
+  def indivisual_number?(num) do
+    if String.length(num) !== 12 do
+      false
+    else
+      list = num
+        |> String.codepoints
+        |> Enum.map(fn(x) -> String.to_integer(x) end)
+      checkdegit = List.last(list)
+      list = List.delete_at(list, -1)
+      list = Enum.with_index(list)
+      remainder = Enum.reduce(list, 0, fn(x, acc) ->
+        idx = 11 - elem(x, 1)
+        q = if idx <= 6 do idx + 1 else idx - 5 end
+        acc = rem(acc + (elem(x, 0) * q), 11) end)
+
+      case remainder do
+        0 -> (checkdegit == 0)
+        1 -> (checkdegit == 0)
+        _ -> (checkdegit == (11 - remainder))
+      end
+    end
+  end
+
+  def valid?(num) do
+    corporate_number?(num) || indivisual_number?(num)
   end
 end
