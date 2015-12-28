@@ -1,5 +1,8 @@
 defmodule Mynumber do
 
+  @doc """
+  Return true if value is a valid corporate number.
+  """
   def corporate_number?(num) do
     if String.length(num) !== 13 do
       false
@@ -18,6 +21,9 @@ defmodule Mynumber do
     end
   end
 
+  @doc """
+  Return true if value is a valid indivisual number.
+  """
   def indivisual_number?(num) do
     if String.length(num) !== 12 do
       false
@@ -41,6 +47,9 @@ defmodule Mynumber do
     end
   end
 
+  @doc """
+  Return true if value is a valid indivisual number or a valid corporate number.
+  """
   def valid?(num) do
     corporate_number?(num) || indivisual_number?(num)
   end
