@@ -1,5 +1,7 @@
 # ElixirMynumber
 
+[![Build Status](https://travis-ci.org/cncgl/elixir_mynumber.svg?branch=master)](https://travis-ci.org/cncgl/elixir_mynumber)
+
 **TODO: Add description**
 
 ## Installation
@@ -17,4 +19,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:elixir_mynumber]]
         end
-
