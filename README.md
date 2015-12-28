@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/cncgl/elixir_mynumber.svg?branch=master)](https://travis-ci.org/cncgl/elixir_mynumber)
 
-[![Inline docs](http://inch-ci.org/github/cncgl/elixir_mynumber.svg)](http://inch-ci.org/github/cncgl/elixir_mynumber)
-
 **TODO: Add description**
 
 ## Installation

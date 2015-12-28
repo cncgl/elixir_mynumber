@@ -2,8 +2,8 @@ defmodule Mynumber.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :elixir_mynumber,
-     version: "0.0.1",
+    [app: :mynumber,
+     version: "1.0.0",
      elixir: "~> 1.1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
