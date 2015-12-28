@@ -7,6 +7,8 @@ defmodule Mynumber.Mixfile do
      elixir: "~> 1.1.1",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     description: description,
+     package: package,
      deps: deps]
   end
 
@@ -14,7 +16,7 @@ defmodule Mynumber.Mixfile do
   #
   # Type "mix help compile.app" for more information
   def application do
-    [applications: [:logger]]
+    []
   end
 
   # Dependencies can be Hex packages:
@@ -27,6 +29,19 @@ defmodule Mynumber.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:inch_ex, only: :docs}]
+    []
+  end
+
+  defp description do
+    """
+    Mynumber Validation for Elixir
+    """
+  end
+
+  defp package do
+    [ files: ["lib", "config", "mix.exs", "README.md"],
+      mainteners: ["cncgl"],
+      licenses: ["MIT"],
+      links: %{"GitHub" => "https://github.com/cncgl/elixir_mynumber"}]
   end
 end
