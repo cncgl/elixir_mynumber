@@ -1,7 +1,6 @@
 # ElixirMynumber
 
 [![Build Status](https://travis-ci.org/cncgl/elixir_mynumber.svg?branch=master)](https://travis-ci.org/cncgl/elixir_mynumber)
-
 [![hex.pm version](https://img.shields.io/hexpm/v/mynumber.svg)](https://hex.pm/packages/mynumber)
 
 mynumber validation for Elixir
