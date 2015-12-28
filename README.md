@@ -21,3 +21,13 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:elixir_mynumber]]
         end
+
+## Spec
+
+- https://www.j-lis.go.jp/data/open/cnt/3/1282/1/H2707_qa.pdf
+- https://www.nta.go.jp/mynumberinfo/FAQ/03houjinbangoukankei.htm
+
+
+## License
+
+MIT
