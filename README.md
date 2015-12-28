@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/cncgl/elixir_mynumber.svg?branch=master)](https://travis-ci.org/cncgl/elixir_mynumber)
 
-**TODO: Add description**
+mynumber validation for Elixir
 
 ## Installation
 
@@ -11,13 +11,13 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
   1. Add elixir_mynumber to your list of dependencies in `mix.exs`:
 
         def deps do
-          [{:elixir_mynumber, "~> 0.0.1"}]
+          [{:mynumber, "~> 1.0.0"}]
         end
 
-  2. Ensure elixir_mynumber is started before your application:
+  2. Ensure mynumber is started before your application:
 
         def application do
-          [applications: [:elixir_mynumber]]
+          [applications: [:mynumber]]
         end
 
 ## Spec
