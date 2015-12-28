@@ -39,8 +39,8 @@ defmodule Mynumber.Mixfile do
   end
 
   defp package do
-    [ files: ["lib", "config", "mix.exs", "README.md"],
-      mainteners: ["cncgl"],
+    [ files: ["lib", "mix.exs", "README.md"],
+      maintainers: ["cncgl"],
       licenses: ["MIT"],
       links: %{"GitHub" => "https://github.com/cncgl/elixir_mynumber"}]
   end
