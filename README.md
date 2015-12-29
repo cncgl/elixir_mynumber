@@ -21,6 +21,14 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
           [applications: [:mynumber]]
         end
 
+## Sample Code
+
+```
+Mynumber.corporate_number?("1010601008968"); # => true
+Mynumber.individual_number?("548836529885"); # => true
+Mynumber.valid?("1010601008968"); # => true
+```
+
 ## Spec
 
 - https://www.j-lis.go.jp/data/open/cnt/3/1282/1/H2707_qa.pdf
